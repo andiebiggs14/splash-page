@@ -1,0 +1,163 @@
+body {
+	font-family: 'Inconsolata', monospace;
+	background-color: #f5f7f9;
+}
+
+a {
+	font-style: none;
+	text-decoration: none;
+	color: #937b64;
+}
+
+a:hover {
+	color: white;
+	transition: all 0.25s;
+	cursor: pointer;
+}
+
+#mainContainer {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.content {
+	left: calc(50% - 250px);
+	right: calc(50% - 250px);
+	width: 500px;
+	text-align: center;
+	position: fixed;
+	top: 50px;
+}
+
+.stereograph:hover {
+	cursor: pointer;
+}
+
+#step0 {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: 30px;
+}
+
+.gif-img {
+	background-image: url('../img/riley/imggif.gif');
+	width: 300px;
+	height: 374px;
+}
+
+#step1 {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: 30px;
+}
+
+.img1 {
+	background-image: url('../img/riley/image1.jpg');
+	visibility: hidden;
+	width: 300px;
+	height: 374px;
+}
+
+#step2 {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: 30px;
+}
+
+.img2 {
+	background-image: url('../img/riley/image2.jpg');
+	width: 3px;
+	height: 374px;
+}
+
+#step3 {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: 30px;
+}
+
+.img3 {
+	background-image: url('../img/riley/image3.jpg');
+	width: 3px;
+	height: 374px;
+}
+
+#step4 {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: 30px;
+}
+
+.img4 {
+	background-image: url('../img/riley/image4.jpg');
+	width: 3px;
+	height: 374px;
+}
+
+.stripe {
+	visibility: hidden;
+	position: absolute;
+	float: left;
+	padding: 0;
+}
+
+.name {
+	margin-top: 425px;
+	color: #2c3c26;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+
+.links-bar a {
+	font-size: 10pt;
+	padding: 5px;
+}
+
+.links-bar {
+	font-size: 10pt;
+}
+
+.about-clicked {
+	display: none;
+	width: 300px;
+	height: 374px;
+	position: absolute;
+	left: calc(50% - 150px);
+	right: calc(50% - 150px);
+	background: rgba(245,247,249,.85);
+	top: 30px;
+	transition: all 0.25s;
+}
+
+.a-text {
+	padding: 30px;
+	text-align: left;
+	font-size: 10pt;
+	color: #2c3c26;
+}
+
+.contact-clicked {
+	display: none;
+	width: 300px;
+	height: 374px;
+	position: absolute;
+	left: calc(50% - 150px);
+	right: calc(50% - 150px);
+	background: rgba(245,247,249,.75);
+	top: 30px;
+	transition: all 0.25s;
+}
+
+.c-text {
+	padding: 30px;
+	text-align: left;
+	font-size: 10pt;
+	color: #2c3c26;
+}
+
+.bottom {
+	margin-top: 1800px;
+	color: #f5f7f9;
+}
