@@ -128,7 +128,6 @@ a:hover {
 	right: calc(50% - 150px);
 	background: rgba(245,247,249,.85);
 	top: 30px;
-	transition: all 0.25s;
 }
 
 .a-text {
@@ -147,7 +146,6 @@ a:hover {
 	right: calc(50% - 150px);
 	background: rgba(245,247,249,.85);
 	top: 30px;
-	transition: all 0.25s;
 }
 
 .c-text {

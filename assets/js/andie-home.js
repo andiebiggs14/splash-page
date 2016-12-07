@@ -2,31 +2,40 @@ $(document).ready(function () {
 
 	var stercl = 0;
 
-	$(".link-about").click(function() {
-		if ($(".contact-clicked").css("display") != "none") {
-			$(".contact-clicked").toggle();
+	var images = new Array();
+	function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+			images[i] = new Image()
+			images[i].src = preload.arguments[i]
 		}
-		$(".about-clicked").toggle();
-	});
+	};
+	preload(
+		"assets/img/ava/imggif.gif",
+		"assets/img/kady/imggif.gif",
+		"assets/img/riley/imggif.gif"
+	);
 
-	$(".link-contact").click(function() {
-		if ($(".about-clicked").css("display") != "none") {
-			$(".about-clicked").toggle();
-		}
-		$(".contact-clicked").toggle();
-	});
+	 $('.link-about').on('click', function () {
+	     $('.about-clicked').show()
+	 });
 
-	$(".contact-clicked").click(function() {
-		if ($(".contact-clicked").css("display") != "none") {
-			$(".contact-clicked").toggle();
-		}
-	});
+	 $(document).mouseup(function (e) {
+	     var popup1 = $(".about-clicked");
+	     if (!$('.link-about').is(e.target) && !popup1.is(e.target) && popup1.has(e.target).length == 0) {
+	         popup1.hide();
+	     }
+	 });
 
-	$(".about-clicked").click(function() {
-		if ($(".about-clicked").css("display") != "none") {
-			$(".about-clicked").toggle();
-		}
-	});
+	 $('.link-contact').on('click', function () {
+	     $('.contact-clicked').show()
+	 });
+
+	 $(document).mouseup(function (e) {
+	     var popup2 = $(".contact-clicked");
+	     if (!$('.link-contact').is(e.target) && !popup2.is(e.target) && popup2.has(e.target).length == 0) {
+	         popup2.hide();
+	     }
+	 });
 
 	$(".stereograph").click(function() {
 		if (stercl == 0) {
